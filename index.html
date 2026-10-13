@@ -419,7 +419,7 @@ button{font:inherit;color:inherit}
 
 /* Hero video */
 .hero{position:relative;max-width:var(--col);margin:0 auto;background:var(--ink)}
-.hero video{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;max-width:100%}
+.hero video,.hero .hero-img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;max-width:100%}
 .hero .dusk{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity 2s ease-in-out}
 .hero .dusk.on{opacity:1}
 .hero .day{transition-duration:2.5s}
@@ -599,10 +599,6 @@ footer p{max-width:62ch;margin:10px auto 0}
     </video>
     <img id="duskFrame" class="dusk" src="media/dusk.jpg" alt="" aria-hidden="true">
     <img id="dayFrame" class="dusk day" src="media/day.jpg" alt="" aria-hidden="true">
-    <div class="vbtn">
-      <button class="chip" id="pauseBtn" aria-label="Pause background video">Pause</button>
-      <button class="chip" data-video><svg width="12" height="12"><use href="#i-play"/></svg>With sound</button>
-    </div>
   </div>
 
   <div class="wrap">
@@ -856,11 +852,11 @@ footer p{max-width:62ch;margin:10px auto 0}
     later(()=>day.classList.add('on'),HOLD_DUSK);
     later(restartVideo,HOLD_DUSK+FADE_TO_DAY+HOLD_DAY);
   });
-  pb.onclick=()=>{
+  if(pb)pb.onclick=()=>{
     if(hv.paused){userPaused=false;clearTimers();if(hv.ended){day.classList.add('on');later(restartVideo,1200)}else{hv.play()}pb.textContent='Pause'}
     else{userPaused=true;clearTimers();hv.pause();pb.textContent='Play'}
   };
-  if(matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause();pb.textContent='Play'}
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause();if(pb)pb.textContent='Play'}
 
   // Modals
   const open=m=>{m.hidden=false;document.body.style.overflow='hidden'};
