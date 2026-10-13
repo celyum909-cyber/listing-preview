@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="1692 Tangiers Drive, Henderson, NV 89012. 5 beds, 4 baths, 5,319 sq ft in guard-gated MacDonald Highlands. Offered at $3,999,900.">
+<meta property="og:title" content="1692 Tangiers Drive · MacDonald Highlands">
+<meta property="og:description" content="5 beds · 4 baths · 5,319 sq ft · Strip and mountain views · $3,999,900">
+<meta property="og:image" content="media/day.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E1E33">
+<style>html,body{margin:0}</style>
+</head>
+<body>
+<title>1692 Tangiers Drive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+/* Layout: single centered column modeled on the listing mockup; cream paper, navy ink, desert-copper accent. Deliberately single (light) theme. */
+:root{
+  --paper:#FAF7F1; --paper-2:#F2ECE2; --card:#FFFFFF;
+  --ink:#0E1E33; --ink-soft:#4A5566; --line:#E3DACB;
+  --copper:#B97A35; --copper-deep:#9A6326; --on-ink:#F7F1E6;
+  --display:"Playfair Display", "Bodoni 72", Didot, Georgia, serif;
+  --sans:"Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --col:760px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+.wrap{max-width:var(--col);margin:0 auto;padding-inline:16px}
+.caps{font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-weight:500;font-size:12px}
+.rule{width:72px;height:1px;background:var(--copper);margin:0 auto;border:0}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.logo{text-decoration:none;display:grid;justify-items:center;line-height:1}
+.logo b{font-family:var(--display);font-weight:500;letter-spacing:.32em;font-size:20px;margin-right:-.32em}
+.logo span{display:flex;align-items:center;gap:6px;font-size:8.5px;letter-spacing:.24em;margin-top:5px;color:var(--ink)}
+.logo span::before,.logo span::after{content:"";width:16px;height:1px;background:var(--copper)}
+.top-right{display:flex;align-items:center;gap:14px}
+.top-phone{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--display);font-size:19px;white-space:nowrap}
+.top-phone svg{color:var(--copper)}
+.top-phone em{width:1px;height:20px;background:var(--ink-soft);opacity:.5}
+.burger{border:0;border-left:1px solid var(--line);background:none;padding:6px 0 6px 14px;cursor:pointer;display:grid;gap:6px}
+.burger i{display:block;width:26px;height:2px;background:var(--copper)}
+@media (max-width:440px){.top-phone .num{display:none}.top-phone em{display:none}}
+
+/* Drawer */
+.drawer{position:fixed;inset:0;z-index:60;display:flex;justify-content:flex-end;background:rgba(14,30,51,.45)}
+.drawer nav{width:min(340px,86vw);height:100%;background:var(--paper);padding:calc(20px + env(safe-area-inset-top,0px)) 24px 24px;display:flex;flex-direction:column;gap:4px;overflow:auto}
+.drawer .x{align-self:flex-end;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:var(--ink)}
+.drawer a{display:block;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--display);font-size:20px}
+.drawer .ext{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper-deep)}
+
+/* Title */
+.title{text-align:center;padding-block:22px 18px}
+.title .eyebrow{color:var(--copper-deep);letter-spacing:.28em}
+.title h1{font-family:var(--display);font-weight:600;font-size:clamp(36px,8.4vw,58px);line-height:1.04;margin:10px 0 10px;letter-spacing:-.01em;text-wrap:balance}
+.addr{display:inline-flex;align-items:center;gap:8px;text-decoration:none;letter-spacing:.24em;font-size:13px;border-bottom:1px solid transparent;padding-bottom:2px}
+.addr:hover{border-color:var(--ink)}
+.addr svg{color:var(--copper)}
+
+/* Hero video */
+.hero{position:relative;max-width:var(--col);margin:0 auto;background:var(--ink)}
+.hero video{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;max-width:100%}
+.hero .dusk{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity 2s ease-in-out}
+.hero .dusk.on{opacity:1}
+.hero .day{transition-duration:2.5s}
+.hero .day.out{transition-duration:1.5s}
+.hero .dusk.snap{transition:none}
+.hero .vbtn{position:absolute;right:12px;bottom:12px;display:flex;gap:8px}
+.chip{border:1px solid rgba(255,255,255,.5);background:rgba(14,30,51,.55);color:#fff;border-radius:999px;padding:7px 12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(4px)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:auto 1fr 1fr 1fr;align-items:center;padding-block:22px 6px}
+.stats>div{text-align:center;padding-inline:8px}
+.stats>div+div{border-left:1px solid var(--copper)}
+.price{font-family:var(--display);font-weight:600;font-size:clamp(30px,7.4vw,52px);letter-spacing:-.02em;line-height:1;text-align:left!important;padding-left:0!important;padding-right:16px!important}
+.stat b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(22px,5vw,32px);line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase}
+@media (max-width:480px){.stats{grid-template-columns:repeat(3,1fr);row-gap:14px}.price{grid-column:1/-1;text-align:center!important;padding:0!important}.stats>div:nth-child(2){border-left:0}}
+
+/* Buttons */
+.ctas{display:grid;gap:12px;padding-block:18px 8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:12px 20px;text-decoration:none;cursor:pointer;font-family:var(--sans);font-weight:500;font-size:14px;letter-spacing:.24em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:var(--on-ink);transition:background .2s,color .2s}
+.btn:hover{background:#1B3150}
+.btn svg{color:var(--copper)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--copper)}
+.btn.ghost:hover{background:var(--paper-2)}
+.btn .tel{font-family:var(--display);letter-spacing:.02em;text-transform:none;font-size:19px}
+.play{display:flex;align-items:center;justify-content:center;gap:14px;border:0;background:none;cursor:pointer;margin:6px auto 0;padding:8px}
+.play i{width:40px;height:40px;border:1.5px solid var(--copper);border-radius:50%;display:grid;place-items:center;color:var(--copper)}
+
+/* Gallery */
+section{scroll-margin-top:80px}
+.sec{padding-block:34px 8px}
+.sec h2{font-family:var(--display);font-weight:500;font-size:clamp(28px,6vw,42px);line-height:1.12;text-align:center;margin:18px 0 20px;text-wrap:balance}
+.sec h2 em{font-style:italic}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery button{border:0;padding:0;cursor:zoom-in;background:var(--paper-2);display:block;overflow:hidden}
+.gallery button:first-child{grid-column:1/-1}
+.gallery img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:3/2;transition:transform .5s}
+.gallery button:first-child img{aspect-ratio:2080/1136}
+.gallery button:hover img{transform:scale(1.03)}
+.center{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding-top:14px}
+.btn.sm{min-height:44px;font-size:12px;letter-spacing:.2em;padding:10px 26px;width:auto}
+
+/* Features */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);row-gap:22px;padding-block:28px 10px}
+.feat{display:flex;align-items:center;gap:12px;padding-inline:12px;min-width:0}
+.feat:not(:nth-child(3n+1)){border-left:1px solid var(--line)}
+.feat svg{flex:none;color:var(--copper)}
+.feat span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;line-height:1.5}
+@media (max-width:560px){.feats{grid-template-columns:1fr 1fr}.feat:not(:nth-child(3n+1)){border-left:0}.feat:nth-child(even){border-left:1px solid var(--line)}}
+.facts{text-align:center;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;line-height:2.1;padding-block:14px 6px}
+.facts i{color:var(--copper);font-style:normal;padding-inline:6px}
+
+/* Accordions */
+.acc{display:grid;gap:10px;padding-block:18px 0}
+details{background:var(--paper-2);border:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:16px 20px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary svg{color:var(--copper);flex:none}
+summary .plus{margin-left:auto;font-size:26px;font-weight:300;color:var(--copper);line-height:1;transition:transform .2s}
+details[open] summary .plus{transform:rotate(45deg)}
+.panel{padding:4px 20px 22px;background:var(--card);border-top:1px solid var(--line)}
+.panel p{max-width:65ch}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-top:14px}
+.calc label{display:grid;gap:4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.calc input,.calc select{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;color:var(--ink);padding:10px 12px;border:1px solid var(--line);background:var(--paper);width:100%;min-width:0}
+.calc-out{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline;border-top:1px solid var(--line);padding-top:14px;margin-top:4px;font-variant-numeric:tabular-nums}
+.calc-out .total{grid-column:1/-1;font-family:var(--display);font-size:34px;font-weight:600}
+.calc-out .total small{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);margin-left:6px}
+.calc-out dt{color:var(--ink-soft);font-size:13px}.calc-out dd{margin:0;text-align:right}
+.note{font-size:12px;color:var(--ink-soft);margin-top:10px}
+.dl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:0;margin:8px 0 0}
+.dl dt,.dl dd{padding:9px 0;border-bottom:1px solid var(--line);margin:0;font-size:14px}
+.dl dt{color:var(--ink-soft);padding-right:12px}
+.dl h4{grid-column:1/-1;margin:18px 0 2px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper-deep)}
+.schools{display:grid;gap:10px;padding-top:12px}
+.school{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.school b{font-family:var(--display);font-size:24px;min-width:56px;color:var(--copper-deep)}
+.school div{min-width:0}.school small{color:var(--ink-soft)}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.pill{border:1px solid var(--line);background:var(--paper);padding:5px 12px;font-size:12px}
+.linkrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+
+/* Contact */
+.contact{background:var(--paper-2);margin-top:40px;padding-block:8px 34px}
+.contact h2{margin-top:26px}
+.agent-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:26px;align-items:center}
+.agent{text-align:center;border-right:1px solid var(--copper);padding-right:20px}
+.agent h3{font-family:var(--display);font-weight:500;font-size:clamp(32px,6vw,42px);margin:0;line-height:1.1}
+.agent .co{font-size:10.5px;letter-spacing:.24em;margin:6px 0 4px}
+.agent .ph{font-family:var(--display);font-size:clamp(26px,5vw,32px);text-decoration:none;display:inline-block}
+.agent .em{font-size:13px;word-break:break-all;color:var(--ink-soft)}
+.copy{border:0;background:none;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--copper-deep);cursor:pointer;padding:4px 6px}
+.qr{margin:14px auto 0;width:96px;padding:6px;border:2px solid var(--copper);background:#fff}
+.qr svg{display:block;width:100%;height:auto}
+.qrcap{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
+form{display:grid;gap:10px}
+.field{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);padding:0 12px}
+.field svg{color:var(--ink-soft);flex:none}
+.field input,.field select,.field textarea{border:0;background:transparent;font:inherit;font-size:16px;color:var(--ink);padding:12px 0;width:100%;min-width:0;outline:none}
+.field:focus-within{border-color:var(--copper)}
+.field textarea{resize:vertical;min-height:64px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.fine{font-size:12px;text-align:center;color:var(--ink-soft);margin:2px 0 0}
+.err{color:#A3361F;font-size:13px}
+.ready{background:var(--card);border:1px solid var(--copper);padding:16px}
+.ready h4{font-family:var(--display);font-size:22px;font-weight:500;margin:0 0 6px}
+.ready pre{white-space:pre-wrap;font-family:var(--sans);font-size:13px;background:var(--paper);padding:10px;border:1px solid var(--line);margin:8px 0}
+@media (max-width:620px){.agent-grid{grid-template-columns:1fr}.agent{border-right:0;border-bottom:1px solid var(--copper);padding:0 0 20px}}
+
+footer{padding-block:18px 26px;text-align:center;font-size:11.5px;color:var(--ink-soft)}
+footer .meta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;letter-spacing:.14em}
+footer p{max-width:62ch;margin:10px auto 0}
+
+/* Bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--ink);display:grid;grid-template-columns:1fr 1fr;padding-bottom:env(safe-area-inset-bottom,0px)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:12px;height:64px;color:var(--on-ink);text-decoration:none;font-size:13.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.bar a+a{border-left:1px solid rgba(247,241,230,.25)}
+.bar svg{color:var(--copper)}
+
+/* Modals */
+.modal{position:fixed;inset:0;z-index:70;background:rgba(8,16,28,.92);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal .x{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:14px;border:0;background:none;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+.modal video,.modal img{max-width:100%;max-height:82vh;display:block}
+.modal .nav{position:absolute;top:50%;transform:translateY(-50%);border:0;background:rgba(255,255,255,.12);color:#fff;width:44px;height:44px;border-radius:50%;font-size:24px;cursor:pointer}
+.modal .prev{left:10px}.modal .next{right:10px}
+.modal .cap{position:absolute;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;color:#ddd;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--ink);color:var(--on-ink);padding:10px 18px;font-size:13px;z-index:80;border:1px solid var(--copper)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 12h17m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5" width="17" height="15.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="M7 13h2M11 13h2M15 13h2M7 16.5h2M11 16.5h2M15 16.5h2"/></g></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4.5" y="2.5" width="15" height="19" rx="1"/><path d="M7.5 5.5h9v4h-9zM8 13h1M11.5 13h1M15 13h1M8 16.5h1M11.5 16.5h1M15 16.5h1"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-4 4.3-6 8-6s6.8 2 8 6"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5.5" width="18" height="13"/><path d="m3 6 9 7 9-7"/></g></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#overview" aria-label="Signature Real Estate Group, back to top"><b>SIGNATURE</b><span>REAL ESTATE GROUP</span></a>
+    <div class="top-right">
+      <a class="top-phone" href="tel:+17023723783" aria-label="Call Angela Reed at 702-372-3783"><svg width="22" height="22"><use href="#i-phone"/></svg><em></em><span class="num">702-372-3783</span></a>
+      <button class="burger" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Page sections">
+    <button class="x" id="menuClose" aria-label="Close menu">&times;</button>
+    <a href="#overview">Overview</a>
+    <a href="#gallery">Photos</a>
+    <a href="#features">Highlights</a>
+    <a href="#more">Payment &amp; details</a>
+    <a href="#tour">Request a tour</a>
+    <a href="#" data-video>Property video</a>
+    <a class="ext" href="https://www.google.com/maps/dir/?api=1&amp;destination=1692+Tangiers+Dr,+Henderson,+NV+89012" target="_blank" rel="noopener">Directions ↗</a>
+    <a class="ext" href="https://www.redfin.com/NV/Henderson/1692-Tangiers-Dr-89012/home/33536664" target="_blank" rel="noopener">Full listing &amp; all 99 photos ↗</a>
+    <a class="ext" href="https://www.propertypanorama.com/instaview/las/2821780" target="_blank" rel="noopener">MLS virtual tour ↗</a>
+  </nav>
+</div>
+
+<main>
+<section id="overview">
+  <div class="wrap title">
+    <div class="caps eyebrow">MacDonald Highlands</div>
+    <h1>1692 Tangiers Drive</h1>
+    <a class="addr caps" href="https://www.google.com/maps/search/?api=1&amp;query=1692+Tangiers+Dr,+Henderson,+NV+89012" target="_blank" rel="noopener" title="Open in Google Maps">Henderson, NV 89012 <svg width="16" height="16"><use href="#i-pin"/></svg></a>
+  </div>
+
+  <div class="hero">
+    <video id="heroVid" autoplay muted playsinline preload="auto" poster="media/poster.jpg" aria-label="Front of 1692 Tangiers Drive, day turning to dusk">
+      <source src="media/hero.mp4" type="video/mp4">
+    </video>
+    <img id="duskFrame" class="dusk" src="media/dusk.jpg" alt="" aria-hidden="true">
+    <img id="dayFrame" class="dusk day" src="media/day.jpg" alt="" aria-hidden="true">
+    <div class="vbtn">
+      <button class="chip" id="pauseBtn" aria-label="Pause background video">Pause</button>
+      <button class="chip" data-video><svg width="12" height="12"><use href="#i-play"/></svg>With sound</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="price">$3,999,900</div>
+      <div class="stat"><b>5</b><span>Beds</span></div>
+      <div class="stat"><b>4</b><span>Baths</span></div>
+      <div class="stat"><b>5,319</b><span>Sq Ft</span></div>
+    </div>
+    <div class="ctas">
+      <a class="btn" href="#tour" data-focus-form>Request a private tour <svg width="22" height="22"><use href="#i-arrow"/></svg></a>
+      <a class="btn ghost" href="tel:+17023723783"><svg width="20" height="20"><use href="#i-phone"/></svg>Call Angela · <span class="tel">702-372-3783</span></a>
+      <button class="play" data-video><i><svg width="16" height="16"><use href="#i-play"/></svg></i><span class="caps">Watch property video</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="sec">
+  <div class="wrap">
+    <hr class="rule">
+    <h2>Space to <em>live.</em> Views to <em>remember.</em></h2>
+    <div class="gallery" id="gal">
+      <button data-i="0" aria-label="View larger: backyard, pool and spa from above"><img src="media/aerial.jpg" alt="Aerial view of the backyard with pool, spa, lawn and two-level covered deck" loading="lazy"></button>
+      <button data-i="1" aria-label="View larger: kitchen"><img src="media/kitchen.jpg" alt="Open kitchen with large quartz island and brass pendants" loading="lazy"></button>
+      <button data-i="2" aria-label="View larger: indoor-outdoor living"><img src="media/living.jpg" alt="Living room opening onto the covered view deck" loading="lazy"></button>
+    </div>
+    <div class="center">
+      <a class="btn ghost sm" href="https://www.redfin.com/NV/Henderson/1692-Tangiers-Dr-89012/home/33536664" target="_blank" rel="noopener">View all photos <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="feats">
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22V9a3 3 0 0 1 6 0M24 22V9a3 3 0 0 1 6 0M12 13h12M12 18h12"/><path d="M4 26c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2M4 31c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2"/></svg><span>Saltwater pool &amp; spa, automatic cover</span></div>
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 31 15 13l7 10 5-6 10 14z"/><path d="m12 18 3 3 3-3"/></svg><span>Strip &amp; mountain views</span></div>
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="7" width="32" height="20"/><path d="M14 33h12M20 27v6M9 22l6-6 4 4 6-7 6 9"/></svg><span>Private theater / golf simulator</span></div>
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 22c-4 0-6-3-6-6s3-6 6-5c1-4 5-6 9-6s8 2 9 6c3-1 6 2 6 5s-2 6-6 6v12H11z"/><path d="M11 29h18M16 22v4M20 22v4M24 22v4"/></svg><span>Chef-inspired kitchen &amp; designer pantry</span></div>
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 30V12M36 30V20M4 22h32v8M4 22v-4h32v4"/><rect x="7" y="14" width="9" height="4" rx="1"/><rect x="18" y="14" width="9" height="4" rx="1"/></svg><span>Main-level primary suite</span></div>
+      <div class="feat"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="6" width="22" height="15"/><path d="M18 21v4h6v-4M4 25h32M8 25v9M32 25v9M16 13l3 3 5-5"/></svg><span>Dedicated office</span></div>
+    </div>
+    <div class="facts">Built 2019<i>·</i>0.30-acre lot<i>·</i>3-car garage<br>Guard-gated community<i>·</i>HOA $330/month</div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="wrap acc">
+    <details id="payDetails">
+      <summary><svg width="26" height="26"><use href="#i-calc"/></svg>Estimate monthly payment<span class="plus" aria-hidden="true">+</span></summary>
+      <div class="panel">
+        <div class="calc">
+          <label for="cPrice">Home price<input id="cPrice" inputmode="numeric" value="3,999,900"></label>
+          <label for="cDown">Down payment %<input id="cDown" type="number" min="0" max="100" step="1" value="20"></label>
+          <label for="cRate">Interest rate %<input id="cRate" type="number" min="0" max="20" step="0.05" value="6.75"></label>
+          <label for="cTerm">Loan term<select id="cTerm"><option value="30">30-year fixed</option><option value="20">20-year fixed</option><option value="15">15-year fixed</option></select></label>
+          <label for="cIns">Insurance / month<input id="cIns" inputmode="numeric" value="700"></label>
+          <label for="cTax">Property tax / year<input id="cTax" inputmode="numeric" value="15,069"></label>
+          <dl class="calc-out" aria-live="polite">
+            <div class="total" id="cTotal">$0<small>per month</small></div>
+            <dt>Principal &amp; interest</dt><dd id="oPI">–</dd>
+            <dt>Property tax</dt><dd id="oTax">–</dd>
+            <dt>HOA</dt><dd>$330</dd>
+            <dt>Home insurance</dt><dd id="oIns">–</dd>
+            <dt>Loan amount</dt><dd id="oLoan">–</dd>
+          </dl>
+        </div>
+        <p class="note">Estimate only. The rate is an example; enter the one from your lender. Property tax uses the 2025 Clark County bill ($15,069). Insurance is an estimate.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><svg width="26" height="26"><use href="#i-pin"/></svg>About the home<span class="plus" aria-hidden="true">+</span></summary>
+      <div class="panel">
+        <p>A transitional-design residence in MacDonald Highlands, built in 2019, with soaring ceilings and an open floor plan. The main level holds the primary suite, a guest bedroom and a dedicated office. The chef-inspired kitchen opens straight to the living area and has a custom designer pantry. Outside, a deck and poolside lounge areas surround a heated saltwater pool and spa with an automatic cover, and the Strip and mountain views carry through nearly every room. A private theater doubles as a golf simulator.</p>
+        <dl class="dl">
+          <h4>Interior</h4>
+          <dt>Bedrooms</dt><dd>5 (room for up to 7)</dd>
+          <dt>Bathrooms</dt><dd>4 · 2 full, 2 three-quarter</dd>
+          <dt>Living area</dt><dd>5,319 sq ft</dd>
+          <dt>Levels</dt><dd>2 stories, primary suite on main level</dd>
+          <dt>Primary suite</dt><dd>17 × 20 ft, custom walk-in closet</dd>
+          <dt>Other bedrooms</dt><dd>15 × 14, 14 × 14, 13 × 15, 13 × 15 ft</dd>
+          <dt>Living room / kitchen</dt><dd>22 × 22 ft each, vaulted living room ceiling</dd>
+          <dt>Kitchen</dt><dd>Island &amp; breakfast bar, quartz counters, custom cabinets, walk-in pantry, stainless appliances, gas oven, double &amp; convection ovens</dd>
+          <dt>Fireplace</dt><dd>Gas</dd>
+          <dt>Flooring</dt><dd>Hardwood, marble, tile, carpet</dd>
+          <dt>Laundry</dt><dd>Main level, sink &amp; cabinets, washer and dryer included</dd>
+          <dt>Systems</dt><dd>2 central A/C units, 2 gas furnaces, owned water softener &amp; purifier, owned alarm, fire sprinklers</dd>
+          <h4>Exterior &amp; lot</h4>
+          <dt>Lot</dt><dd>0.30 acre (13,068 sq ft), block fencing</dd>
+          <dt>Pool</dt><dd>Private in-ground, heated, saltwater, spa, automatic cover</dd>
+          <dt>Outdoor living</dt><dd>View deck, covered patio, poolside lounge areas</dd>
+          <dt>Garage</dt><dd>3-car attached, epoxy floors, EV charging, golf-cart garage, workshop</dd>
+          <dt>Views</dt><dd>Las Vegas Strip and mountains</dd>
+          <h4>Listing</h4>
+          <dt>MLS #</dt><dd>2821780 (GLVAR)</dd>
+          <dt>Listed</dt><dd>September 24, 2026</dd>
+          <dt>Property tax</dt><dd>$15,069 (2025)</dd>
+          <dt>APN</dt><dd>178-28-212-016</dd>
+          <dt>Utilities</dt><dd>Public water &amp; sewer</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details>
+      <summary><svg width="26" height="26"><use href="#i-user"/></svg>Community &amp; HOA<span class="plus" aria-hidden="true">+</span></summary>
+      <div class="panel">
+        <p>MacDonald Highlands is a guard-gated hillside community in Henderson, set around the DragonRidge Country Club golf course.</p>
+        <dl class="dl">
+          <dt>Association</dt><dd>Foothills at MacDonald Ranch</dd>
+          <dt>HOA dues</dt><dd>$330 / month</dd>
+          <dt>Dues cover</dt><dd>Association management, grounds maintenance, security</dd>
+          <dt>Association phone</dt><dd>702-614-9100</dd>
+        </dl>
+        <div class="pillrow"><span class="pill">Guard-gated</span><span class="pill">Country club</span><span class="pill">Golf course</span><span class="pill">Clubhouse</span><span class="pill">Fitness center</span><span class="pill">Tennis</span><span class="pill">Pickleball</span><span class="pill">Pool &amp; spa</span><span class="pill">Park</span><span class="pill">Dog park</span><span class="pill">Playground</span></div>
+      </div>
+    </details>
+
+    <details>
+      <summary><svg width="26" height="26"><use href="#i-cal"/></svg>Nearby schools<span class="plus" aria-hidden="true">+</span></summary>
+      <div class="panel">
+        <div class="schools">
+          <div class="school"><b>9/10</b><div>Hannah Marie Brown Elementary<br><small>Public · PreK–5 · 1.8 mi</small></div></div>
+          <div class="school"><b>7/10</b><div>Bob Miller Middle School<br><small>Public · 6–8 · 1.8 mi</small></div></div>
+          <div class="school"><b>5/10</b><div>Foothill High School<br><small>Public · 9–12 · 5.3 mi</small></div></div>
+        </div>
+        <p class="note">GreatSchools ratings. Confirm school assignment with Clark County School District.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><svg width="26" height="26"><use href="#i-pin"/></svg>Location &amp; links<span class="plus" aria-hidden="true">+</span></summary>
+      <div class="panel">
+        <p><strong>1692 Tangiers Dr, Henderson, NV 89012</strong> <button class="copy" data-copy="1692 Tangiers Dr, Henderson, NV 89012">Copy</button></p>
+        <div class="linkrow">
+          <a class="btn ghost sm" href="https://www.google.com/maps/search/?api=1&amp;query=1692+Tangiers+Dr,+Henderson,+NV+89012" target="_blank" rel="noopener">Map</a>
+          <a class="btn ghost sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=1692+Tangiers+Dr,+Henderson,+NV+89012" target="_blank" rel="noopener">Directions</a>
+          <a class="btn ghost sm" href="https://www.propertypanorama.com/instaview/las/2821780" target="_blank" rel="noopener">MLS virtual tour</a>
+          <a class="btn ghost sm" href="https://www.redfin.com/NV/Henderson/1692-Tangiers-Dr-89012/home/33536664" target="_blank" rel="noopener">Full listing</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="tour" class="contact">
+  <div class="wrap">
+    <hr class="rule" style="margin-top:26px">
+    <h2><em>Arrange your private showing.</em></h2>
+    <div class="agent-grid">
+      <div class="agent">
+        <h3>Angela Reed</h3>
+        <div class="caps co">Signature Real Estate Group</div>
+        <a class="ph" href="tel:+17023723783">702-372-3783</a><br>
+        <button class="copy" data-copy="702-372-3783">Copy number</button>
+        <div class="em">AngelaHReed@gmail.com <button class="copy" data-copy="AngelaHReed@gmail.com">Copy</button></div>
+        <div class="qr" id="qr" role="img" aria-label="QR code placeholder"></div>
+        <div class="qrcap">Scan to save this listing</div>
+      </div>
+      <div>
+        <form id="tourForm" novalidate>
+          <label class="field"><svg width="18" height="18"><use href="#i-user"/></svg><span class="sr">Name</span><input id="fName" name="name" placeholder="Name" autocomplete="name" required></label>
+          <label class="field"><svg width="18" height="18"><use href="#i-mail"/></svg><span class="sr">Email or phone</span><input id="fContact" name="contact" placeholder="Email or phone" autocomplete="email" required></label>
+          <label class="field"><svg width="18" height="18"><use href="#i-cal"/></svg><span class="sr">Preferred date</span><input id="fDate" name="date" type="date" required></label>
+          <label class="field"><svg width="18" height="18"><use href="#i-cal"/></svg><span class="sr">Preferred time</span><select id="fTime" name="time"><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Evening</option></select></label>
+          <label class="field"><span class="sr">Message</span><textarea id="fMsg" name="msg" placeholder="Questions or notes (optional)"></textarea></label>
+          <div class="err" id="fErr" hidden></div>
+          <button class="btn" type="submit">Send tour request <svg width="20" height="20"><use href="#i-arrow"/></svg></button>
+          <p class="fine">Your request goes directly to the listing agent.</p>
+        </form>
+        <div class="ready" id="ready" hidden>
+          <h4>Your request is ready</h4>
+          <p style="margin:0">Send it to Angela by email, or copy it into a text to 702-372-3783.</p>
+          <pre id="readyText"></pre>
+          <div class="linkrow">
+            <a class="btn sm" id="mailLink" href="#">Email Angela</a>
+            <button class="btn ghost sm" id="copyReq" type="button">Copy request</button>
+            <button class="btn ghost sm" id="editReq" type="button">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <div class="meta"><span>MLS #2821780</span><span>Listing courtesy of Signature Real Estate Group</span></div>
+  <p>Information is deemed reliable but not guaranteed and should be independently verified. Property details subject to verification. Photos © LVR 2026.</p>
+</footer>
+
+<nav class="bar" aria-label="Quick actions">
+  <a href="tel:+17023723783"><svg width="24" height="24"><use href="#i-phone"/></svg>Call agent</a>
+  <a href="#tour" data-focus-form><svg width="24" height="24"><use href="#i-cal"/></svg>Request tour</a>
+</nav>
+
+<div class="modal" id="vModal" hidden role="dialog" aria-label="Property video">
+  <button class="x" data-close aria-label="Close video">&times;</button>
+  <video id="tourVid" controls playsinline preload="none" poster="media/poster.jpg"><source src="media/tour.mp4" type="video/mp4"></video>
+</div>
+<div class="modal" id="lb" hidden role="dialog" aria-label="Photo viewer">
+  <button class="x" data-close aria-label="Close photo">&times;</button>
+  <button class="nav prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nav next" id="lbNext" aria-label="Next photo">›</button>
+  <div class="cap" id="lbCap"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const toast=t=>{const el=$('#toast');el.textContent=t;el.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>el.hidden=true,1800)};
+
+  // Menu
+  const drawer=$('#drawer'),mb=$('#menuBtn');
+  const setMenu=o=>{drawer.hidden=!o;mb.setAttribute('aria-expanded',o)};
+  mb.onclick=()=>setMenu(true); $('#menuClose').onclick=()=>setMenu(false);
+  drawer.addEventListener('click',e=>{if(e.target===drawer||e.target.closest('a'))setMenu(false)});
+
+  // Focus form when a tour CTA is used
+  $$('[data-focus-form]').forEach(a=>a.addEventListener('click',()=>setTimeout(()=>$('#fName').focus({preventScroll:true}),500)));
+
+  // Hero pause
+  const hv=$('#heroVid'),pb=$('#pauseBtn');
+  const slow=()=>{hv.defaultPlaybackRate=0.5;hv.playbackRate=0.5};
+  slow();['loadedmetadata','play','playing'].forEach(ev=>hv.addEventListener(ev,slow));
+  // End-of-loop sequence:
+  //   video ends on dusk -> hold dusk 5s -> dusk blends into the daytime photo (2.5s)
+  //   -> daytime photo holds 4s -> video restarts underneath and the photo fades away (1.5s)
+  const HOLD_DUSK=5000, FADE_TO_DAY=2500, HOLD_DAY=4000;
+  const dusk=$('#duskFrame'), day=$('#dayFrame');
+  let timers=[],userPaused=false;
+  const later=(fn,ms)=>timers.push(setTimeout(()=>{if(!userPaused)fn()},ms));
+  const clearTimers=()=>{timers.forEach(clearTimeout);timers=[]};
+  const snap=(el,on)=>{el.classList.add('snap');el.classList.toggle('on',on);void el.offsetWidth;el.classList.remove('snap')};
+  function restartVideo(){
+    hv.currentTime=0;
+    hv.addEventListener('seeked',function go(){
+      hv.removeEventListener('seeked',go);
+      hv.play().catch(()=>{});
+      snap(dusk,false);                         // hidden under the day photo, so no visible change
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{day.classList.add('out');day.classList.remove('on')}));
+    });
+  }
+  hv.addEventListener('ended',()=>{
+    clearTimers();
+    day.classList.remove('out'); snap(day,false);
+    snap(dusk,true);                            // still matches the last frame exactly
+    later(()=>day.classList.add('on'),HOLD_DUSK);
+    later(restartVideo,HOLD_DUSK+FADE_TO_DAY+HOLD_DAY);
+  });
+  pb.onclick=()=>{
+    if(hv.paused){userPaused=false;clearTimers();if(hv.ended){day.classList.add('on');later(restartVideo,1200)}else{hv.play()}pb.textContent='Pause'}
+    else{userPaused=true;clearTimers();hv.pause();pb.textContent='Play'}
+  };
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause();pb.textContent='Play'}
+
+  // Modals
+  const open=m=>{m.hidden=false;document.body.style.overflow='hidden'};
+  const close=m=>{m.hidden=true;document.body.style.overflow='';const v=m.querySelector('video');if(v)v.pause()};
+  $$('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m||e.target.closest('[data-close]'))close(m)}));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$$('.modal').forEach(m=>!m.hidden&&close(m));setMenu(false)}
+    if(!$('#lb').hidden){if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)}});
+  $$('[data-video]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();setMenu(false);open($('#vModal'));const v=$('#tourVid');v.currentTime=0;v.play().catch(()=>{})}));
+
+  // Lightbox
+  const photos=[['media/aerial.jpg','Backyard · pool, spa & view deck'],['media/kitchen.jpg','Chef-inspired kitchen'],['media/living.jpg','Indoor-outdoor living']];
+  let cur=0;
+  function show(i){cur=(i+photos.length)%photos.length;$('#lbImg').src=photos[cur][0];$('#lbImg').alt=photos[cur][1];$('#lbCap').textContent=photos[cur][1]+'  ·  '+(cur+1)+' / '+photos.length}
+  $$('#gal button').forEach(b=>b.onclick=()=>{show(+b.dataset.i);open($('#lb'))});
+  $('#lbPrev').onclick=()=>show(cur-1); $('#lbNext').onclick=()=>show(cur+1);
+
+  // Copy
+  function copy(text,label){
+    const done=()=>toast((label||'Copied')+'');
+    try{navigator.clipboard.writeText(text).then(done,()=>fallback(text,done))}catch(e){fallback(text,done)}
+  }
+  function fallback(text,done){const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){toast('Select and copy: '+text)}t.remove()}
+  $$('[data-copy]').forEach(b=>b.onclick=()=>copy(b.dataset.copy,'Copied'));
+
+  // Mortgage calculator
+  const num=v=>+String(v).replace(/[^0-9.]/g,'')||0;
+  const usd=n=>'$'+Math.round(n).toLocaleString('en-US');
+  function calc(){
+    const price=num($('#cPrice').value),down=Math.min(100,num($('#cDown').value)),rate=num($('#cRate').value)/100/12,n=+$('#cTerm').value*12;
+    const loan=price*(1-down/100);
+    const pi=rate?loan*rate/(1-Math.pow(1+rate,-n)):loan/n;
+    const tax=num($('#cTax').value)/12,ins=num($('#cIns').value);
+    $('#oPI').textContent=usd(pi);$('#oTax').textContent=usd(tax);$('#oIns').textContent=usd(ins);$('#oLoan').textContent=usd(loan);
+    $('#cTotal').firstChild.nodeValue=usd(pi+tax+330+ins);
+  }
+  ['#cPrice','#cDown','#cRate','#cTerm','#cIns','#cTax'].forEach(s=>$(s).addEventListener('input',calc));
+  calc();
+
+  // Tour form
+  const d=new Date();d.setDate(d.getDate()+1);$('#fDate').min=d.toISOString().slice(0,10);
+  $('#tourForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const name=$('#fName').value.trim(),contact=$('#fContact').value.trim(),date=$('#fDate').value,time=$('#fTime').value,msg=$('#fMsg').value.trim();
+    const err=$('#fErr');
+    if(!name||!contact||!date){err.textContent='Please add your name, an email or phone number, and a preferred date.';err.hidden=false;return}
+    err.hidden=true;
+    const nice=new Date(date+'T12:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    const body='Hi Angela,\n\nI would like a private tour of 1692 Tangiers Drive, Henderson (MLS #2821780).\n\nName: '+name+'\nContact: '+contact+'\nPreferred date: '+nice+' ('+time.toLowerCase()+')'+(msg?'\nNotes: '+msg:'')+'\n\nThank you.';
+    $('#readyText').textContent=body;
+    $('#mailLink').href='mailto:AngelaHReed@gmail.com?subject='+encodeURIComponent('Tour request: 1692 Tangiers Drive')+'&body='+encodeURIComponent(body);
+    $('#tourForm').hidden=true;$('#ready').hidden=false;
+  });
+  $('#copyReq').onclick=()=>copy($('#readyText').textContent,'Request copied');
+  $('#editReq').onclick=()=>{$('#ready').hidden=true;$('#tourForm').hidden=false};
+
+  // Placeholder QR (decorative, not scannable)
+  (function(){
+    const N=25,c=4;let s=1692,r=()=>(s=(s*16807)%2147483647)/2147483647;
+    let p='';
+    const finder=(x,y)=>`<rect x="${x*c}" y="${y*c}" width="${7*c}" height="${7*c}"/><rect x="${(x+1)*c}" y="${(y+1)*c}" width="${5*c}" height="${5*c}" fill="#fff"/><rect x="${(x+2)*c}" y="${(y+2)*c}" width="${3*c}" height="${3*c}"/>`;
+    const inF=(x,y)=>(x<8&&y<8)||(x>N-9&&y<8)||(x<8&&y>N-9);
+    for(let y=0;y<N;y++)for(let x=0;x<N;x++)if(!inF(x,y)&&r()>.52)p+=`M${x*c} ${y*c}h${c}v${c}h-${c}z`;
+    $('#qr').innerHTML=`<svg viewBox="0 0 ${N*c} ${N*c}" fill="#0E1E33"><path d="${p}"/>${finder(0,0)}${finder(N-7,0)}${finder(0,N-7)}</svg>`;
+  })();
+})();
+</script>
+
+</body>
+</html>
